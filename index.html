@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Fonseca - Back End Developer</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #eee;
+        color: #000;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        padding: 2rem 20% 2rem 20%;
+        text-align: justify;
+      }
+
+      footer {
+        bottom: 0;
+        padding: 0.5rem 0 0.5rem 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jeremy Fonseca</h1>
+      <p>Back End Developer</p>
+    </header>
+
+    <main>
+      <h2>About Me</h2>
+      <p>
+        I'm a software developer with 6 years of programming experience. My
+        primary development focus is in C++ on UNIX-like platforms such as Linux
+        where I've worked with several libraries in this language.
+      </p>
+      <p>
+        Besides, I have great experience using other programming languages like
+        C, Python, and mostly TypeScript for building building back-end services
+        with NestJS. As a side note, I enjoy creating new software solutions for
+        startups as well as connecting with fellow software developers to share
+        experiences and knowledge.
+      </p>
+
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>C/C++</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>Docker</li>
+        <li>gRPC</li>
+        <li>Microservices</li>
+        <li>Scrum</li>
+        <li>NestJS</li>
+        <li>Angular</li>
+      </ul>
+
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:fonseca.dev@outlook.com">fonseca.dev@outlook.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/fontseca">fontseca</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/fontseca">fontseca</a>
+      </p>
+    </main>
+
+    <footer>
+      <p id="footer-text">&copy;</p>
+    </footer>
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById(
+        'footer-text'
+      ).textContent += ` ${currentYear} Jeremy Fonseca. All rights reserved.`;
+    </script>
+  </body>
+</html>

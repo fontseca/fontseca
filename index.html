@@ -3,100 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeremy Fonseca - Back End Developer</title>
-    <style>
-      body {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #eee;
-        color: #000;
-        padding: 20px;
-        text-align: center;
-      }
-
-      h1 {
-        margin: 0;
-      }
-
-      main {
-        padding: 2rem 20% 2rem 20%;
-        text-align: justify;
-      }
-
-      footer {
-        bottom: 0;
-        padding: 0.5rem 0 0.5rem 0;
-        width: 100%;
-        text-align: center;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="public/stylesheets/stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/icons/site.webmanifest" />
+    <title>fontseca.dev — me</title>
   </head>
   <body>
-    <header>
-      <h1>Jeremy Fonseca</h1>
-      <p>Back End Developer</p>
-    </header>
+    <div class="site-wrapper">
+      <header class="header">
+        <a href="/" style="text-decoration: none; font-weight: normal">
+          <div class="logo">
+            <p class="logo-text">fontseca.<span>dev</span></p>
+            <p class="logo-motto">Make it simple. Make it possible.</p>
+          </div>
+        </a>
+        <nav class="navigation" id="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a href="/" class="selected">about: <span>me</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <h2>About Me</h2>
-      <p>
-        I'm a software developer with 6 years of programming experience. My
-        primary development focus is in C++ on UNIX-like platforms such as Linux
-        where I've worked with several libraries in this language.
-      </p>
-      <p>
-        Besides, I have great experience using other programming languages like
-        C, Python, and mostly TypeScript for building building back-end services
-        with NestJS. As a side note, I enjoy creating new software solutions for
-        startups as well as connecting with fellow software developers to share
-        experiences and knowledge.
-      </p>
+      <main class="main">
+        <section class="me-container">
+          <header>
+            <h1 class="name">Jeremy <span>Fonseca</span></h1>
+            <p class="job-title">Back-End Software Developer</p>
+          </header>
+        </section>
 
-      <h2>Programming Languages</h2>
-      <ul>
-        <li>C/C++</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-        <li>SQL</li>
-      </ul>
+        <section class="summary-container">
+          <p>
+            I'm a software developer with 6+ years of programming experience. My
+            primary development focus is on building robust and scalable
+            back-end services and APIs with Go using UNIX-like platforms, such
+            as Linux, and containerization with Docker.
+          </p>
 
-      <h2>Skills</h2>
-      <ul>
-        <li>Docker</li>
-        <li>gRPC</li>
-        <li>Microservices</li>
-        <li>Scrum</li>
-        <li>NestJS</li>
-        <li>Angular</li>
-      </ul>
+          <p>
+            Naturally, I'm also capable of building full-stack web, desktop, and
+            mobile applications. I also feel pretty comfortable working with UI
+            tools such as Figma, although I'm not very proficient when it comes
+            to choose colors.
+          </p>
 
-      <h2>Contact Me</h2>
-      <p>
-        Email:
-        <a href="mailto:fonseca.dev@outlook.com">fonseca.dev@outlook.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/fontseca">fontseca</a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/fontseca">fontseca</a>
-      </p>
-    </main>
+          <p>
+            <strong>Side note:</strong>
+          </p>
 
-    <footer>
-      <p id="footer-text">&copy;</p>
-    </footer>
-    <script>
-      const currentYear = new Date().getFullYear();
-      document.getElementById(
-        'footer-text'
-      ).textContent += ` ${currentYear} Jeremy Fonseca. All rights reserved.`;
-    </script>
+          <p>
+            <em>
+              This web site that you're presently visiting is only
+              provisional.</em
+            >
+            I'm currently working on the ultimate and official version of it.
+            (You can see the progress of my Go project's source code
+            <a
+              href="https://github.com/fontseca/fontseca.dev/tree/iss/17"
+              target="_blank"
+              >on this GitHub repository</a
+            >.) Therefore, you will not be able to have a full experience with
+            every feature and section in my web site. Just hold on!
+          </p>
+
+          <div class="line"></div>
+        </section>
+
+        <section class="contact-container">
+          <p><strong>Contact:</strong></p>
+          <ul>
+            <li>
+              <p>
+                E-mail:
+                <a target="_blank" href="mailto:fontseca.dev@outlook.com"
+                  >fonseca.dev@outlook.com</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <p>
+                LinkedIn:
+                <a target="_blank" href="https://www.linkedin.com/in/fontseca"
+                  >fontseca</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <p>
+                GitHub:
+                <a target="_blank" href="https://github.com/fontseca"
+                  >fontseca</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <p>
+                YouTube:
+                <a target="_blank" href="https://www.youtube.com/@fontseca_dev"
+                  >@fontseca_dev</a
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <p class="bottom-line">
+          Feel free to reach me out if you want to build something together,
+          have any questions, or just want to connect.
+        </p>
+      </main>
+
+      <footer class="footer">
+        <div class="logo">
+          <p class="logo-text">fontseca.<span>dev</span></p>
+          <p class="logo-motto">Make it simple. Make it possible.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

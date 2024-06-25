@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("../images/white-theme-bg.png");
+  background-image: url("../images/wbg.webp");
   background-size: 80%;
   background-attachment: fixed;
   min-height: 100%;
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .logo-text {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   font-family: "Source Serif 4", sans-serif;
 }
@@ -46,29 +46,61 @@ a:hover {
   font-size: 13px;
 }
 
+/* Button.  */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.btn.filled {
+  background-color: black;
+  color: white;
+}
+
 /* Wrapper.  */
 
 .site-wrapper {
-  width: 80%;
-  min-height: 100vh;
+  width: 54%;
+  max-width: 54rem;
+  min-height: 100%;
   margin: auto;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  padding-left: 8%;
-  padding-right: 8%;
-  max-width: 1570px;
   display: block;
+}
+
+@media screen and (max-width: 1120px) {
+  .site-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .site-wrapper {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 510px) {
   .site-wrapper {
-    padding-left: 6%;
-    padding-right: 6%;
+    width: 80%;
   }
 }
 
 .main {
-  min-height: 100%;
+  min-height: 76vh;
 }
 
 /* Header and navigation.  */
@@ -134,7 +166,7 @@ a:hover {
 /* Me section.  */
 
 .me-container .name {
-  font-size: clamp(2.5rem, 4vw, 4vw);
+  font-size: clamp(3.5rem, 5vw, 6vw);
   font-weight: 200;
 }
 
@@ -143,9 +175,9 @@ a:hover {
 }
 
 .me-container .job-title {
-  font-size: clamp(1.5rem, 1vw, 1vw);
+  font-size: clamp(1.5rem, 1.5vw, 3vw);
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .me-container .job-title span {
@@ -156,7 +188,6 @@ a:hover {
 
 .summary-container {
   padding-top: 33px;
-  width: 60%;
 }
 
 @media screen and (max-width: 1120px) {
@@ -170,50 +201,100 @@ a:hover {
 }
 
 .summary-container p {
-  font-size: clamp(16px, 1vw, 1vw);
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 17px;
   margin-bottom: 1.2rem;
-}
-
-.line {
-  background-color: black;
-  width: 100%;
-  height: 1px;
 }
 
 /* Contact section.  */
 
-.contact-container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.contact-icons-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.6rem;
 }
 
-.contact-container ul {
-  padding-left: 3rem;
+.contact-icons-container > p.label {
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 17px;
+  padding-right: 0.6rem;
 }
 
-.contact-container > p:first-child {
-  padding-bottom: 1rem;
+.contact-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 0.4rem;
+  border: 1px solid transparent;
 }
 
-.contact-container ul li {
-  padding-bottom: 0.3rem;
+.contact-icons a i {
+  font-size: 24px;
+}
+
+.contact-icons a:hover {
+  border: 1px solid black;
+}
+
+.buttons * {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 510px) {
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .buttons * {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 }
 
 .bottom-line {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-family: "Source Serif 4", sans-serif;
 }
 
 /* Footer.  */
 
 .footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  opacity: 0.6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: right;
+}
+
+.footer-header a {
+  text-decoration: none;
+  font-weight: normal !important;
 }
 
 .footer-content p {
   padding-top: 0.2rem;
   font-family: "Source Serif 4", sans-serif;
   font-size: 11px;
+}
+
+@media screen and (max-width: 1220px) {
+  .contact-icons {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .contact-icons {
+    width: 60%;
+  }
+
+  .summary-container {
+    max-width: 38rem;
+  }
 }

@@ -5,8 +5,31 @@
   font-family: "Raleway", sans-serif;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: url("/public/images/bg-light.webp");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url("/public/images/bg-dark.webp");
+    background-color: black;
+    filter: invert(95%) hue-rotate(180deg);
+  }
+
+  img,
+  video,
+  iframe {
+    filter: invert(95%) hue-rotate(180deg);
+  }
+
+  .navigation-menu-bars img {
+    filter: invert(0);
+  }
+}
+
 body {
-  background-image: url("../images/wbg.webp");
   background-size: 80%;
   background-attachment: fixed;
   min-height: 100%;
